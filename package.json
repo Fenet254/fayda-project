@@ -1,0 +1,16 @@
+{
+  "name": "fayda-project",
+  "version": "1.0.0",
+  "description": "Fayda Digital Queue & Token System",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cookie-session": "^2.1.1",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.3",
+    "openid-client": "^6.6.2"
+  }
+}

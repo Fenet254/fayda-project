@@ -43,3 +43,13 @@ Fayda is the key to securely identifying and authenticating users in our system.
 - **Authentication:** Fayda ID API  
 - **Notifications:** Email service using Nodemailer  
 - **Deployment:** Heroku
+## 🔧 Installation and Deployment
+
+Follow these steps to run and deploy the application.
+
+### 📦 1. Installing Dependencies
+
+Make sure you have Node.js and npm installed.
+
+```bash
+npm install

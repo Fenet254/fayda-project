@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - CLIENT_ID=${CLIENT_ID}
+      - REDIRECT_URI=${REDIRECT_URI}
+      - DB_HOST=db
+      - DB_USER=root
+      - DB_PASSWORD=your_mysql_root_password_here
+      - DB_NAME=your_database_name_here
+      # Add other env variables you use here
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: your_mysql_root_password_here
+      MYSQL_DATABASE: your_database_name_here
+    ports:
+  - "3307:3306"
+
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  mysql-data:
