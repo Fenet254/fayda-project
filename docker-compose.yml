@@ -1,5 +1,4 @@
 version: '3.8'
-
 services:
   app:
     build: .
@@ -24,7 +23,6 @@ services:
       MYSQL_DATABASE: your_database_name_here
     ports:
   - "3307:3306"
-
     volumes:
       - mysql-data:/var/lib/mysql
 

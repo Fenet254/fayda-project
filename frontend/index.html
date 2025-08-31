@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="user-dashboard.css" />
 </head>
 <body>
-    <a href="/login">
-  <button>Login with Fayda ID</button>
-</a>
+  <header>
+    <h1>Welcome, Citizen</h1>
+    <p>Book your token and see your queue status</p>
+  </header>
 
+  <main>
+    <section class="booking">
+      <h2>Book Queue</h2>
+      <select id="office-select">
+        <option value="">Select Office</option>
+        <option value="Passport">Passport Office</option>
+        <option value="Tax">Tax Office</option>
+        <option value="License">License Center</option>
+      </select>
+      <button onclick="bookToken()">Book Now</button>
+    </section>
+
+    <section class="status">
+      <h2>Your Token Info</h2>
+      <div id="token-info">No token booked yet.</div>
+    </section>
+  </main>
+
+  <script src="user-dashboard.js"></script>
 </body>
 </html>
