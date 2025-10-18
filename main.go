@@ -36,8 +36,8 @@ func main() {
 	// Serve static files
 	r.Static("/static", "./frontend")
 
-	// Load HTML templates
-	r.LoadHTMLGlob("templates/*")
+	// Load HTML templates (commented out since templates directory doesn't exist)
+	// r.LoadHTMLGlob("templates/*")
 
 	port := os.Getenv("PORT")
 	if port == "" {

@@ -30,12 +30,12 @@ func InitOIDC() {
 
 	clientID := os.Getenv("CLIENT_ID")
 	if clientID == "" {
-		log.Fatal("❌ CLIENT_ID environment variable is required")
+		clientID = "dummy_client_id"
 	}
 
 	redirectURI := os.Getenv("REDIRECT_URI")
 	if redirectURI == "" {
-		log.Fatal("❌ REDIRECT_URI environment variable is required")
+		redirectURI = "http://localhost:3000/callback"
 	}
 
 	OAuth2Config = oauth2.Config{
