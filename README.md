@@ -1,4 +1,4 @@
-# Project Title  
+ # Project Title  
 Fayda Digital Queue & Token System
 
 ## Contributors  
@@ -33,16 +33,14 @@ This system will streamline waiting lines, reduce overcrowding, and make public 
 
 Fayda is the key to securely identifying and authenticating users in our system. By using Fayda ID for login, we ensure that every citizen is uniquely verified, which helps prevent misuse and queue abuse. This makes the booking process safe, fair, and personalized. Fayda also simplifies authentication by removing the need for separate passwords, improving user experience. Additionally, Fayda’s secure APIs help protect user data and enable easy integration with other government services, supporting wider digital transformation efforts.
 
-## Tech Stack 
-
 ## Tech Stack
 
-- **Frontend:** HTML, CSS, Vanilla JavaScript  
-- **Backend:** Node.js with Express.js  
-- **Database:** MySQL  
-- **Authentication:** Fayda ID API  
-- **Notifications:** Email service using Nodemailer  
-- **Deployment:** Heroku
+- **Frontend:** HTML, CSS, Vanilla JavaScript
+- **Backend:** Go with Gin framework
+- **Database:** MySQL
+- **Authentication:** Fayda ID API (OIDC)
+- **Notifications:** Email service using Nodemailer
+- **Deployment:** Heroku / Docker
 ## 🔧 Installation and Deployment
 
 Follow these steps to run and deploy the application.

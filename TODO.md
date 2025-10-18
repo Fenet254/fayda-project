@@ -10,12 +10,12 @@
 - [x] Create `go.mod`: Define Go modules and dependencies (gin, go-oidc, gorilla/sessions, etc.)
 
 ## 3. Update deployment files
-- [ ] Update `Dockerfile`: Change to Go base image and build/run Go binary
-- [ ] Update `docker-compose.yml`: Update app service for Go runtime
+- [x] Update `Dockerfile`: Change to Go base image and build/run Go binary
+- [x] Update `docker-compose.yml`: Update app service for Go runtime
 
 ## 4. Update project files
-- [ ] Update `.gitignore`: Add Go-specific ignores (e.g., .exe, vendor/)
-- [ ] Update `README.md`: Change tech stack to Go backend
+- [x] Update `.gitignore`: Add Go-specific ignores (e.g., .exe, vendor/)
+- [x] Update `README.md`: Change tech stack to Go backend
 
 ## 5. Remove Node.js files
 - [ ] Remove `index.js`
