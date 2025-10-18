@@ -1,20 +1,34 @@
-# Use the official Node.js 18 image (LTS)
-FROM node:18
+# Use the official Go image
+FROM golang:1.21-alpine AS builder
 
-# Create app directory inside container
-WORKDIR /usr/src/app
+# Set the working directory inside the container
+WORKDIR /app
 
-# Copy package.json and package-lock.json (if any)
-COPY package*.json ./
+# Copy go mod and sum files
+COPY go.mod go.sum ./
 
-# Install app dependencies
-RUN npm install --production
+# Download dependencies
+RUN go mod download
 
-# Copy app source code
+# Copy the source code
 COPY . .
 
-# Expose port 3000 for the app
+# Build the application
+RUN go build -o main .
+
+# Use a minimal image for the final stage
+FROM alpine:latest
+
+# Install ca-certificates for HTTPS requests
+RUN apk --no-cache add ca-certificates
+
+WORKDIR /root/
+
+# Copy the binary from the builder stage
+COPY --from=builder /app/main .
+
+# Expose port 3000
 EXPOSE 3000
 
-# Run the app
-CMD ["node", "index.js"]
+# Run the binary
+CMD ["./main"]

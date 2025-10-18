@@ -1,13 +1,13 @@
 # TODO: Convert Node.js Backend to Go
 
 ## 1. Create new Go files
-- [ ] Create `main.go`: Main server logic using Gin framework
-- [ ] Create `db.go`: MySQL connection using database/sql and mysql driver
-- [ ] Create `routes.go`: API endpoints (e.g., /test-db)
-- [ ] Create `auth.go`: OIDC client setup using go-oidc library
+- [x] Create `main.go`: Main server logic using Gin framework
+- [x] Create `db.go`: MySQL connection using database/sql and mysql driver
+- [x] Create `routes.go`: API endpoints (e.g., /test-db)
+- [x] Create `auth.go`: OIDC client setup using go-oidc library
 
 ## 2. Create Go module
-- [ ] Create `go.mod`: Define Go modules and dependencies (gin, go-oidc, gorilla/sessions, etc.)
+- [x] Create `go.mod`: Define Go modules and dependencies (gin, go-oidc, gorilla/sessions, etc.)
 
 ## 3. Update deployment files
 - [ ] Update `Dockerfile`: Change to Go base image and build/run Go binary

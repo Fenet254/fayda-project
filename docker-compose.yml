@@ -11,6 +11,7 @@ services:
       - DB_USER=root
       - DB_PASSWORD=your_mysql_root_password_here
       - DB_NAME=your_database_name_here
+      - OIDC_ISSUER_URL=https://esignet.ida.fayda.et
       # Add other env variables you use here
     depends_on:
       - db
@@ -22,7 +23,7 @@ services:
       MYSQL_ROOT_PASSWORD: your_mysql_root_password_here
       MYSQL_DATABASE: your_database_name_here
     ports:
-  - "3307:3306"
+      - "3307:3306"
     volumes:
       - mysql-data:/var/lib/mysql
 
