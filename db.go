@@ -22,11 +22,11 @@ func InitDB() {
 	}
 	password := os.Getenv("DB_PASSWORD")
 	if password == "" {
-		password = "Ru0810/15"
+		password = ""
 	}
 	database := os.Getenv("DB_NAME")
 	if database == "" {
-		database = "fayda_queue_system"
+		database = "mysql"
 	}
 
 	dsn := fmt.Sprintf("%s:%s@tcp(%s:3306)/%s", user, password, host, database)
