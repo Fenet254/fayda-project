@@ -18,14 +18,14 @@
 - [x] Update `README.md`: Change tech stack to Go backend
 
 ## 5. Remove Node.js files
-- [ ] Remove `index.js`
-- [ ] Remove `db.js`
-- [ ] Remove `backend/routes.js`
-- [ ] Remove `auth/faydaAuth.js`
-- [ ] Remove `package.json`
-- [ ] Remove `package-lock.json`
+- [x] Remove `index.js`
+- [x] Remove `db.js`
+- [x] Remove `backend/routes.js`
+- [x] Remove `auth/faydaAuth.js`
+- [x] Remove `package.json`
+- [x] Remove `package-lock.json`
 
 ## 6. Followup steps
-- [ ] Install Go dependencies via `go mod tidy`
+- [ ] Install Go dependencies via `go mod tidy` (Go not installed on system)
 - [ ] Test the Go server locally
 - [ ] Verify frontend integration with new backend
